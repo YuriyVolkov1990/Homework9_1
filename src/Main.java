@@ -36,22 +36,20 @@ public class Main {
         boolean rule = maxElement > minElement;
         for (int i : arr) {
             System.out.print(i + " ");
-        }
-        System.out.println();
-        System.out.println(rule);
-        for (int i : arr) {
             if (!rule) {
                 minElement = arr[1];
                 maxElement = arr[0];
             }
-            for (int k : arr) {
+        }
+        System.out.println();
+        System.out.println(rule);
+        for (int k : arr) {
                 if (k < minElement) {
                     minElement = k;
                 } else if (k > maxElement) {
                     maxElement = k;
                 }
             }
-        }
         System.out.println("минимальный = "+minElement);
         System.out.println("максимальный = "+maxElement);
     }
