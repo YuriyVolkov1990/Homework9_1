@@ -40,15 +40,15 @@ public class Main {
         System.out.println();
         System.out.println(rule);
         for (int i : arr) {
-            if (rule == false) {
+            if (!rule) {
                 minElement = arr[1];
                 maxElement = arr[0];
             }
-            for (int j = 0; j < arr.length; j++) {
-                if (arr[j]<minElement) {
-                    minElement=arr[j];
-                } else if (arr[j]>maxElement) {
-                    maxElement=arr[j];
+            for (int k : arr) {
+                if (k < minElement) {
+                    minElement = k;
+                } else if (k > maxElement) {
+                    maxElement = k;
                 }
             }
         }
