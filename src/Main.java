@@ -54,8 +54,6 @@ public class Main {
         }
         System.out.println("минимальный = "+minElement);
         System.out.println("максимальный = "+maxElement);
-        //Arrays.sort(arr);
-        //System.out.println("Минимальная сумма трат за день составила " + arr[0] + " рублей. Максимальная сумма трат за день составила "+ arr[29] + " рублей");
     }
     public static void task3() {
         System.out.println("Задача 3");
