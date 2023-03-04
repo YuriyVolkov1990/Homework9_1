@@ -42,7 +42,6 @@ public class Main {
             }
         }
         System.out.println();
-        System.out.println(rule);
         for (int k : arr) {
                 if (k < minElement) {
                     minElement = k;
@@ -50,8 +49,7 @@ public class Main {
                     maxElement = k;
                 }
             }
-        System.out.println("минимальный = "+minElement);
-        System.out.println("максимальный = "+maxElement);
+        System.out.println("Минимальная сумма трат за день составила " + minElement + " рублей. Максимальная сумма трат за день составила " + maxElement + " рублей");
     }
     public static void task3() {
         System.out.println("Задача 3");
