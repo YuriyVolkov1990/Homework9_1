@@ -44,9 +44,16 @@ public class Main {
                 minElement = arr[1];
                 maxElement = arr[0];
             }
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[j]<minElement) {
+                    minElement=arr[j];
+                } else if (arr[j]>maxElement) {
+                    maxElement=arr[j];
+                }
+            }
         }
-        System.out.println("максимальный = "+maxElement);
         System.out.println("минимальный = "+minElement);
+        System.out.println("максимальный = "+maxElement);
         //Arrays.sort(arr);
         //System.out.println("Минимальная сумма трат за день составила " + arr[0] + " рублей. Максимальная сумма трат за день составила "+ arr[29] + " рублей");
     }
